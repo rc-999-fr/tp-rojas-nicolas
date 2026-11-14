@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buscador de episodios de Rick and Morty">
+    <title>Multiverse | Episodios de Rick and Morty</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+    <header class="encabezado">
+        <a href="#" class="logo">MULTIVERSE<span>.</span></a>
+
+        <nav>
+            <a href="#buscador">Explorar episodios</a>
+            <a href="#resultados">Catálogo</a>
+        </nav>
+
+        <span class="etiqueta">RICK AND MORTY</span>
+    </header>
+
+    <main>
+        <section class="presentacion">
+            <p class="sobre-titulo">EL MULTIVERSO TE ESPERA</p>
+            <h1>Explora los episodios</h1>
+            <p class="descripcion">
+                Busca tus episodios favoritos y descubre cada aventura
+                de Rick y Morty.
+            </p>
+        </section>
+
+        <section class="busqueda" id="buscador">
+            <form id="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre del episodio</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Ejemplo: Pilot"
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="temporada">Temporada</label>
+                    <select id="temporada">
+                        <option value="">Todas las temporadas</option>
+                        <option value="S01">Temporada 1</option>
+                        <option value="S02">Temporada 2</option>
+                        <option value="S03">Temporada 3</option>
+                        <option value="S04">Temporada 4</option>
+                        <option value="S05">Temporada 5</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="botonBuscar">
+                    Buscar episodios
+                </button>
+            </form>
+        </section>
+
+        <section class="catalogo" id="resultados">
+            <div class="catalogo-encabezado">
+                <div>
+                    <p class="sobre-titulo">CATÁLOGO</p>
+                    <h2>Resultados de búsqueda</h2>
+                </div>
+
+                <p id="contador" class="contador" hidden></p>
+            </div>
+
+            <p id="mensaje" class="mensaje" role="status" aria-live="polite">
+                Escribe un nombre o selecciona una temporada para comenzar.
+            </p>
+
+            <div id="listaEpisodios" class="grilla-episodios"></div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>Proyecto desarrollado por Nicolás Rojas</p>
+        <p>Trabajo Práctico · JavaScript · API REST</p>
+    </footer>
+
+</body>
+</html>
