@@ -1,48 +1,74 @@
+# Buscador de episodios de Rick and Morty
 
-# Multiverse - Buscador de episodios
+Aplicación web que permite buscar episodios de la serie Rick and Morty utilizando su API pública. Los usuarios pueden buscar por nombre, filtrar por temporada y visualizar los resultados mediante tarjetas.
 
-## Datos del estudiante
+**Autor:** Nicolás Rojas  
+**Materia:** Fundamentos de Desarrollo Web - UCSA  
+**Variante del TP:** C - Episodios
 
-- **Nombre:** Nicolás Rojas
-- **Modalidad:** Individual
-- **Trabajo:** Trabajo Práctico de JavaScript
-- **Variante:** C - Episodios
-- **Último dígito de CI:** 8
+## Sitios publicados
 
-## Descripción
+- **GitHub Pages:** https://rc-999-fr.github.io/tp-rojas-nicolas/
+- **Vercel:** Pendiente de publicación.
 
-Multiverse es una aplicación web que permite buscar episodios de Rick and Morty mediante la API REST oficial.
+## Captura
 
-El usuario puede buscar por nombre y filtrar por temporada. Los resultados se muestran en tarjetas con el nombre del episodio, código, fecha de emisión y cantidad de personajes.
-
-La aplicación utiliza Fetch API, async/await, manejo de errores y localStorage para recordar la última búsqueda.
-
-## Tecnologías utilizadas
-
-- HTML5
-- CSS3
-- JavaScript ES6+
-- Fetch API
-- Rick and Morty API
-- GitHub Pages
+![Captura de la aplicación](img/captura.png)
 
 ## Funcionalidades
 
-- Búsqueda por nombre.
-- Filtro por temporada.
-- Visualización de episodios en tarjetas.
-- Mensajes de carga y errores.
-- Persistencia de la última búsqueda.
-- Diseño responsive.
+- Buscar episodios por nombre.
+- Filtrar episodios por temporada.
+- Mostrar el nombre, código, fecha de emisión y cantidad de personajes.
+- Mostrar mensajes durante la búsqueda.
+- Informar cuando no existen resultados.
+- Manejar errores de conexión.
+- Guardar la última búsqueda mediante localStorage.
+- Adaptarse a diferentes tamaños de pantalla.
 
-## Captura de pantalla
+## Tecnologías utilizadas
 
-![Captura de Multiverse](img/captura.png)
+- HTML5: estructura de la página.
+- CSS3: diseño, Grid, Flexbox y responsive.
+- JavaScript ES6+: funcionamiento de la aplicación.
+- Fetch API: consulta de episodios.
+- localStorage: almacenamiento de la última búsqueda.
+- API de Rick and Morty: fuente de información.
 
-## API utilizada
+## Estructura del proyecto
 
-https://rickandmortyapi.com/api/episode
+```text
+tp-rojas-nicolas/
+├── index.html
+├── README.md
+├── .gitignore
+├── css/
+│   └── estilos.css
+├── js/
+│   └── app.js
+└── img/
+    └── captura.png
+```
 
-## Publicación
+## Cómo ejecutar el proyecto localmente
 
-Pegar aquí el enlace de GitHub Pages.
+1. Descargar o clonar el repositorio:
+
+   `git clone https://github.com/rc-999-fr/tp-rojas-nicolas.git`
+
+2. Abrir la carpeta del proyecto en Visual Studio Code.
+3. Abrir `index.html` en el navegador o utilizar Live Server.
+4. Escribir el nombre de un episodio o seleccionar una temporada.
+5. Presionar el botón Buscar.
+
+## Despliegue
+
+El proyecto se publica mediante GitHub Pages y Vercel.
+
+La rama principal utilizada para la publicación es `main`.
+
+Cuando se realizan cambios y se envían a GitHub mediante `git push`, las plataformas conectadas pueden actualizar automáticamente la página publicada.
+
+## Repositorio
+
+https://github.com/rc-999-fr/tp-rojas-nicolas
